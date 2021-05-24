@@ -54,12 +54,13 @@ $mrg: 1rem;
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 180px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px;
+    border:1px solid #fff;
     position: absolute;
     z-index: 1;
     bottom: 100%;
