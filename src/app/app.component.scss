@@ -13,7 +13,10 @@ $mrg: 1rem;
         }
     }
     @media (max-width: 540px) {
-        margin: $mrg * 2;
+        margin-top: $mrg * 8;
+        margin-left: $mrg * 2;
+        margin-bottom: $mrg * 2;
+        margin-right: $mrg * 2;
     }
     @media (min-width: 540px) {
         margin: $mrg * 4;
