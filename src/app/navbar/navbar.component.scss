@@ -1,6 +1,10 @@
 .navbar {
-    background-color: #1b1b1b;
+    background-color: #1b1b1be1;
     display: flex;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .ulnav {
@@ -9,6 +13,9 @@
     .linav {
         display: inline;
         a {
+            float: left;
+            display: block;
+            text-align: center;
             padding: 8px;
         }
     }
