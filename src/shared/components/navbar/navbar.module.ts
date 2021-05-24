@@ -6,8 +6,9 @@ import { CommonModule } from '@angular/common';
   declarations: [NavbarComponent],
   imports: [
     RouterModule,
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [NavbarComponent],
 })
-export class NavbarModule {}
+export class NavbarModule { }

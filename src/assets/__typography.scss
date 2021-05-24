@@ -1,7 +1,7 @@
 @import "./_colors";
 
 @font-face {
-    font-family: "Roboto",'sans-serif';
+    font-family: "Roboto", "sans-serif";
     src: url("./fonts/Roboto-Regular.ttf");
 }
 // <p class="p-12__light p__light__med"
@@ -82,6 +82,11 @@ $lg: 4rem;
     &:hover {
         color: $lime-green;
     }
+}
+
+.a-active {
+    color: $lime-green;
+    border-bottom: 1px solid $lime-green;
 }
 
 .a-md {
