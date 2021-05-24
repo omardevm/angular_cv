@@ -1,19 +1,18 @@
-.navbar {
+.footer {
     background-color: #1b1b1bec;
-    display: flex;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
     height: 56px;
     width: 100%;
-    text-align: center;
     .links {
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        display: flex;
         flex-flow: row;
-    }
-    .img {
-        height: auto;
-        &__frameworks {
-            max-width: 10%;
+        .imgs {
+            height: auto;
+            &__frameworks {
+                max-width: 30%;
+            }
         }
     }
 }
