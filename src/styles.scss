@@ -44,5 +44,5 @@ a {
 }
 router-outlet + * {
     display: block;
-    animation: fade 1s;
+    animation: fade 0.7s;
 }

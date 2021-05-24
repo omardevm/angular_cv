@@ -2,6 +2,9 @@
     background-color: #1b1b1bec;
     height: 56px;
     width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
     .links {
         justify-content: center;
         align-items: center;

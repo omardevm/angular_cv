@@ -1,55 +1,5 @@
 $mrg: 1rem;
 
-.container {
-    display: flex;
-    flex-flow: row;
-    height: 700px;
-    .img {
-        height: auto;
-        &__frameworks {
-            max-width: 10%;
-        }
-        &__ulises {
-            max-width: 85%;
-        }
-    }
-    @media (max-width: 540px) {
-        margin-top: $mrg * 8;
-        margin-left: $mrg * 2;
-        margin-bottom: $mrg * 2;
-    }
-    @media (min-width: 540px) {
-        margin: $mrg * 4;
-        .img-container {
-            margin-top: $mrg * 2;
-        }
-    }
-    @media (max-width: 540px) {
-        flex-flow: column;
-        text-align: center;
-        .img {
-            &__frameworks {
-                max-width: 20%;
-            }
-            &__ulises {
-                max-width: 20%;
-            }
-        }
-    }
-    .subheader {
-        flex-direction: column;
-        justify-content: center;
-        align-self: center;
-        @media (min-width: 540px) {
-            margin: $mrg * 2;
-        }
-        .logos {
-            flex-flow: row;
-            margin: 10px;
-        }
-    }
-}
-
 .tooltip {
     position: relative;
     display: inline-block;
@@ -75,4 +25,54 @@ $mrg: 1rem;
     visibility: visible;
     opacity: 1;
     animation: fade 1s linear;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    height: 550px;
+
+    .img {
+        height: auto;
+        &__frameworks {
+            max-width: 10%;
+        }
+        &__ulises {
+            max-width: 85%;
+        }
+    }
+    @media (max-width: 540px) {
+        height: 750px;
+        margin-top: $mrg * 8;
+        margin-left: $mrg * 2;
+        margin-bottom: $mrg * 2;
+        flex-flow: column;
+        text-align: center;
+        .img {
+            &__frameworks {
+                max-width: 20%;
+            }
+            &__ulises {
+                max-width: 20%;
+            }
+        }
+    }
+    @media (min-width: 540px) {
+        margin: $mrg * 4;
+        .img-container {
+            margin-top: $mrg * 2;
+        }
+    }
+    .subheader {
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        @media (min-width: 540px) {
+            margin: $mrg * 2;
+        }
+        .logos {
+            flex-flow: row;
+            margin: 10px;
+        }
+    }
 }
