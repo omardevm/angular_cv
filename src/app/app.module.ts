@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NavbarModule } from 'src/shared/components/navbar/navbar.module';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { NavbarModule } from './navbar/navbar.module';
 
 @NgModule({
   declarations: [
