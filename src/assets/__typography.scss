@@ -7,8 +7,8 @@
 // <p class="p-12__light p__light__med"
 // <p class="p-12__dark p__dark__med"
 $sm: 18px;
-$md: 3rem;
-$lg: 4.5rem;
+$md: 2rem;
+$lg: 4rem;
 
 .p-sm {
     font-size: $sm;
@@ -79,11 +79,12 @@ $lg: 4.5rem;
 .a-sm {
     font-size: $sm;
     color: $white;
-
     &:hover {
         color: $lime-green;
     }
-    &__light {
-        color: $white;
-    }
+}
+
+.a-md {
+    font-size: $md;
+    color: $lime-green;
 }

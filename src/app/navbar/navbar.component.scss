@@ -1,0 +1,15 @@
+.navbar {
+    background-color: #1b1b1b;
+    display: flex;
+}
+
+.ulnav {
+    padding: 20px;
+    list-style-type: none;
+    .linav {
+        display: inline;
+        a {
+            padding: 8px;
+        }
+    }
+}

@@ -1,3 +1,39 @@
-.subheader{
-    line-height: 1rem;
+$mrg: 1rem;
+
+.img-container {
+    max-width: 250px;
+}
+.container {
+    display: flex;
+    flex-flow: row;
+    .img {
+        max-width: 100%;
+        height: auto;
+    }
+    @media (max-width: 540px) {
+        margin: $mrg * 2;
+    }
+    @media (min-width: 540px) {
+        margin: $mrg * 4;
+    }
+    @media (max-width: 540px) {
+        flex-flow: column;
+        text-align: center;
+        .img {
+            max-width: 20%;
+            height: auto;
+        }
+    }
+    .subheader {
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        @media (min-width: 540px) {
+            margin: $mrg * 2;
+        }
+        .logos {
+            flex-flow: row;
+            margin: 10px;
+        }
+    }
 }
