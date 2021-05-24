@@ -1,0 +1,89 @@
+@import "./_colors";
+
+@font-face {
+    font-family: "Roboto",'sans-serif';
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+// <p class="p-12__light p__light__med"
+// <p class="p-12__dark p__dark__med"
+$sm: 18px;
+$md: 3rem;
+$lg: 4.5rem;
+
+.p-sm {
+    font-size: $sm;
+    &__light {
+        color: $white;
+        &__med {
+            font-weight: 500;
+        }
+        &__bold {
+            font-weight: 700;
+        }
+    }
+    &__dark {
+        color: $lime-green;
+        &__medium {
+            font-weight: 500;
+        }
+        &__bold {
+            font-weight: 700;
+        }
+    }
+}
+
+.p-md {
+    font-size: $md;
+    &__light {
+        color: $white;
+        &__medium {
+            font-weight: 500;
+        }
+        &__bold {
+            font-weight: 700;
+        }
+    }
+    &__dark {
+        color: $lime-green;
+        &__medium {
+            font-weight: 500;
+        }
+        &__bold {
+            font-weight: 700;
+        }
+    }
+}
+
+.h1 {
+    font-size: $lg;
+    &__light {
+        color: $white;
+        &__medium {
+            font-weight: 500;
+        }
+        &__bold {
+            font-weight: 700;
+        }
+    }
+    &__dark {
+        color: $lime-green;
+        &__medium {
+            font-weight: 500;
+        }
+        &__bold {
+            font-weight: 700;
+        }
+    }
+}
+
+.a-sm {
+    font-size: $sm;
+    color: $white;
+
+    &:hover {
+        color: $lime-green;
+    }
+    &__light {
+        color: $white;
+    }
+}
