@@ -14,6 +14,9 @@ $lg: 4rem;
     font-size: $sm;
     &__light {
         color: $white;
+        &__normal {
+            font-weight: normal;
+        }
         &__med {
             font-weight: 500;
         }
@@ -23,6 +26,9 @@ $lg: 4rem;
     }
     &__dark {
         color: $lime-green;
+        &__normal {
+            font-weight: normal;
+        }
         &__medium {
             font-weight: 500;
         }
@@ -36,6 +42,9 @@ $lg: 4rem;
     font-size: $md;
     &__light {
         color: $white;
+        &__normal {
+            font-weight: normal;
+        }
         &__medium {
             font-weight: 500;
         }
@@ -45,6 +54,9 @@ $lg: 4rem;
     }
     &__dark {
         color: $lime-green;
+        &__normal {
+            font-weight: normal;
+        }
         &__medium {
             font-weight: 500;
         }
@@ -58,6 +70,9 @@ $lg: 4rem;
     font-size: $lg;
     &__light {
         color: $white;
+        &__normal {
+            font-weight: normal;
+        }
         &__medium {
             font-weight: 500;
         }
@@ -67,6 +82,9 @@ $lg: 4rem;
     }
     &__dark {
         color: $lime-green;
+        &__normal {
+            font-weight: normal;
+        }
         &__medium {
             font-weight: 500;
         }
