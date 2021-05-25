@@ -15,6 +15,13 @@ const appRoutes: Routes = [
         loadChildren: () => import('./pages/third/third.module').then(m => m.ThirdModule),
     },
     {
+        path: '404',
+        loadChildren: () => import('./pages/notfound/notfound.module').then(m => m.NotFoundModule),
+    },
+    {
+        path: '**', redirectTo: '/404'
+    },
+    {
         path: '',
         redirectTo: '/home',
         pathMatch: 'full'
