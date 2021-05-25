@@ -3,6 +3,11 @@ import { RouterModule, Routes } from "@angular/router";
 
 const appRoutes: Routes = [
     {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
+    },
+    {
         path: 'home',
         loadChildren: () => import('./pages/first/first.module').then(m => m.FirstModule),
     },
@@ -14,18 +19,8 @@ const appRoutes: Routes = [
         path: 'articles',
         loadChildren: () => import('./pages/third/third.module').then(m => m.ThirdModule),
     },
-    {
-        path: '404',
-        loadChildren: () => import('./pages/notfound/notfound.module').then(m => m.NotFoundModule),
-    },
-    {
-        path: '**', redirectTo: '/404'
-    },
-    {
-        path: '',
-        redirectTo: '/home',
-        pathMatch: 'full'
-    }
+    { path: '404', loadChildren: () => import('./pages/notfound/notfound.module').then(m => m.NotFoundModule), },
+    { path: '**', redirectTo: '/404' }
 ];
 
 @NgModule({
