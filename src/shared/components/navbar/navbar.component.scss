@@ -1,0 +1,25 @@
+
+.navbar {
+    background-color: #1b1b1bec;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:9999;
+}
+
+.ulnav {
+    padding: 20px;
+    list-style-type: none;
+    .linav {
+        display: inline;
+        a {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 8px;
+        }
+    }
+}
+
