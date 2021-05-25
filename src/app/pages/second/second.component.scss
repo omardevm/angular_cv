@@ -2,10 +2,10 @@ $mrg: 1rem;
 .container {
     display: flex;
     flex-direction: column;
-    height: 750px;
+    height: 950px;
     margin-top: $mrg * 4;
     @media (max-width: 540px) {
-        height: 950px;
+        height: 1150px;
         margin-top: $mrg * 8;
         margin-left: $mrg * 2;
         margin-bottom: $mrg * 2;
@@ -28,17 +28,19 @@ $mrg: 1rem;
             flex-direction: column;
         }
         .item {
-            margin: 10px;
             flex-grow: 1;
-            margin-top: 8px;
+            margin: 2rem;
             vertical-align: middle;
             height: auto;
-            max-width: 80%;
+            max-width: 400px;
             @media (max-width: 540px) {
                 max-width: 75%;
             }
             @media (max-width: 640px) {
                 max-width: 50%;
+            }
+            img {
+                max-width: 400px;
             }
         }
     }

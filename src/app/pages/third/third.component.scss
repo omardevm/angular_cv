@@ -1,7 +1,88 @@
+@import "__colors.scss";
 $mrg: 1rem;
-
 .container {
     display: flex;
-    flex-flow: row;
-    height: 700px;
+    flex-direction: column;
+    height: 100%;
+    margin-top: $mrg * 4;
+    @media (max-width: 540px) {
+        height: 1150px;
+        margin-top: $mrg * 8;
+        margin-left: $mrg * 2;
+        margin-bottom: $mrg * 2;
+    }
+    .subheader {
+        flex-direction: column;
+        justify-content: center;
+        margin: $mrg * 4;
+        @media (max-width: 540px) {
+            margin: 0;
+        }
+    }
+    .subheader input {
+        padding: 8px;
+        margin-top: 4px;
+        background-color: $black-100;
+        border: 1px solid $white;
+        color: $white;
+        border-radius: 4px;
+    }
+    .row {
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        @media (max-width: 540px) {
+            flex-direction: column;
+        }
+        .item {
+            position: relative;
+            flex-grow: 1;
+            margin: 2rem;
+            vertical-align: middle;
+            height: auto;
+            max-width: 200px;
+            @media (max-width: 540px) {
+                max-width: 75%;
+            }
+            @media (max-width: 640px) {
+                max-width: 50%;
+            }
+            .text {
+                color: $black-100;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .overray {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                max-height: 200px;
+                max-width: 200px;
+                opacity: 0;
+                border-radius: 12px;
+                transition: 0.5s ease;
+                background-color: $lime-green;
+            }
+            &:hover .overray {
+                opacity: 1;
+            }
+
+            img {
+                max-width: 200px;
+                display: block;
+                height: auto;
+            }
+        }
+    }
 }
