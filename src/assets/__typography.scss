@@ -1,19 +1,23 @@
 @import "./_colors";
 
 @font-face {
-    font-family: "Roboto",'sans-serif';
+    font-family: "Roboto", "sans-serif";
     src: url("./fonts/Roboto-Regular.ttf");
 }
 // <p class="p-12__light p__light__med"
 // <p class="p-12__dark p__dark__med"
 $sm: 18px;
-$md: 3rem;
-$lg: 4.5rem;
+$md: 2rem;
+$lg: 4rem;
 
 .p-sm {
     font-size: $sm;
     &__light {
         color: $white;
+        &__normal {
+            font-weight: normal;
+            text-align: justify;
+        }
         &__med {
             font-weight: 500;
         }
@@ -23,6 +27,9 @@ $lg: 4.5rem;
     }
     &__dark {
         color: $lime-green;
+        &__normal {
+            font-weight: normal;
+        }
         &__medium {
             font-weight: 500;
         }
@@ -36,6 +43,9 @@ $lg: 4.5rem;
     font-size: $md;
     &__light {
         color: $white;
+        &__normal {
+            font-weight: normal;
+        }
         &__medium {
             font-weight: 500;
         }
@@ -45,6 +55,9 @@ $lg: 4.5rem;
     }
     &__dark {
         color: $lime-green;
+        &__normal {
+            font-weight: normal;
+        }
         &__medium {
             font-weight: 500;
         }
@@ -58,6 +71,9 @@ $lg: 4.5rem;
     font-size: $lg;
     &__light {
         color: $white;
+        &__normal {
+            font-weight: normal;
+        }
         &__medium {
             font-weight: 500;
         }
@@ -67,6 +83,9 @@ $lg: 4.5rem;
     }
     &__dark {
         color: $lime-green;
+        &__normal {
+            font-weight: normal;
+        }
         &__medium {
             font-weight: 500;
         }
@@ -79,11 +98,18 @@ $lg: 4.5rem;
 .a-sm {
     font-size: $sm;
     color: $white;
-
     &:hover {
         color: $lime-green;
     }
-    &__light {
-        color: $white;
-    }
+}
+
+.a-active {
+    color: $lime-green;
+    border-bottom: 1px solid $lime-green;
+}
+
+.a-md {
+    font-size: $md;
+    font-weight: 500;
+    color: $lime-green;
 }
