@@ -4,7 +4,7 @@ import { RouterModule, Routes } from "@angular/router";
 const appRoutes: Routes = [
     {
         path: '',
-        redirectTo: '/home',
+        redirectTo: 'home',
         pathMatch: 'full'
     },
     {
@@ -20,11 +20,11 @@ const appRoutes: Routes = [
         loadChildren: () => import('./pages/third/third.module').then(m => m.ThirdModule),
     },
     { path: '404', loadChildren: () => import('./pages/notfound/notfound.module').then(m => m.NotFoundModule), },
-    { path: '**', redirectTo: '/404' }
+    { path: '**', redirectTo: '404' }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'enabled' })],
+    imports: [RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'enabled', useHash: true })],
     exports: [RouterModule]
 
 })
